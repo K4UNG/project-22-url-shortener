@@ -1,0 +1,58 @@
+nav {
+    background-color: var(--dark-violet);
+    text-align: center;
+    width: 90%;
+    position: fixed;
+    z-index: 10;
+    top: 100px;
+    transform: translate(50%, -8px);
+    right: 50%;
+    padding: 2em;
+    border-radius: 15px;
+    opacity: 0;
+    transition: 150ms ease;
+    pointer-events: none;
+}
+
+nav.shown {
+    opacity: 1;
+    transform: translate(50%, 0);
+    pointer-events: all;
+}
+
+nav a {
+    color: white;
+    font-size: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: .5em 0;
+    display: inline-block;
+}
+
+nav hr {
+    opacity: .25;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.login,
+.signup {
+    width: 100%;
+    margin: .3em 0;
+    padding: .8rem;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.login {
+    background-color: transparent;
+}
+
+.signup {
+    border-radius: 30px;
+    background-color: var(--cyan);
+}

@@ -1,0 +1,39 @@
+.card {
+    background: white;
+    margin: 2rem 0;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+    box-shadow: 0 0 30px 0 rgba(84, 84, 84, 0.133);
+}
+
+.original,
+.short {
+    padding: .6rem 1rem;
+    font-size: 1.125rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.short {
+    color: var(--cyan);
+}
+
+.copy {
+    width: 90%;
+    margin: auto;
+    display: block;
+    border: 0;
+    padding: .5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--cyan);
+    font-size: 1.2rem;
+}
+
+.copy.copied {
+    opacity: 1;
+    background-color: var(--darker-violet);
+}

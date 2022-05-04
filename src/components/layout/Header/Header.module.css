@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+.logo {
+    width: 110px;
+    align-self: end;
+}
+
+.burger {
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+}
+
+.burger:hover {
+    opacity: 1;
+}
+
+.line1 {
+    width: 100%;
+    background: rgb(151, 151, 151);
+    height: 4px;
+    transition: 150ms ease;
+}
+
+.burger.burger--shown .line1 {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+.line2,
+.line3 {
+    width: 100%;
+    background: rgb(151, 151, 151);
+    height: 4px;
+    position: absolute;
+    left: 0;
+    transition: transform 150ms ease;
+    transform-origin: left;
+}
+
+.burger.burger--shown .line2 {
+    transform: rotate(45deg) translateY(-2.5px);
+}
+
+.burger.burger--shown .line3 {
+    transform: rotate(-45deg) translateY(2.5px);
+}
+
+.line2 {
+    top: 5px;
+}
+
+.line3 {
+    bottom: 5px;
+}

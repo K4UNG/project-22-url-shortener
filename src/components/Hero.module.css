@@ -1,0 +1,44 @@
+.hero {
+    overflow: hidden;
+}
+
+.hero__img {
+    width: 130%;
+    display: block;
+    margin: 2em 0;
+}
+
+.hero__text {
+    margin: 1em;
+    text-align: center;
+}
+
+.hero__text h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: .5em;
+}
+
+.hero__text p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: auto;
+    color: var(--gray-violet);
+}
+
+.hero__btn {
+    font-size: 1.125rem;
+    padding: 1rem;
+    border: 0;
+    background-color: var(--cyan);
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    display: block;
+    transition: opacity .2s ease;
+}
+
+.hero__btn:hover {
+    opacity: .5;
+}
