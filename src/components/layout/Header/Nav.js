@@ -5,17 +5,17 @@ export default function Nav(props) {
     <nav className={props.shown ? styles.shown : undefined}>
       <ul className={styles.nav__links}>
         <li>
-          <a onClick={props.close} href="#">
+          <a onClick={props.close} href="https://shrtco.de/X9VSBt">
             Features
           </a>
         </li>
         <li>
-          <a onClick={props.close} href="#">
+          <a onClick={props.close} href="https://shrtco.de/X9VSBt">
             Pricing
           </a>
         </li>
         <li>
-          <a onClick={props.close} href="#">
+          <a onClick={props.close} href="https://shrtco.de/X9VSBt">
             Resources
           </a>
         </li>

@@ -10,13 +10,13 @@ export default function Footer() {
           <h3>Features</h3>
           <ul>
             <li>
-              <a href="#">Links Shortening</a>
+              <a href="https://shrtco.de/NtGuuJ">Links Shortening</a>
             </li>
             <li>
-              <a href="#">Branded Links</a>
+              <a href="https://shrtco.de/NtGuuJ">Branded Links</a>
             </li>
             <li>
-              <a href="#">Analytics</a>
+              <a href="https://shrtco.de/NtGuuJ">Analytics</a>
             </li>
           </ul>
         </div>
@@ -25,13 +25,13 @@ export default function Footer() {
           <h3>Resources</h3>
           <ul>
             <li>
-              <a href="#">Blog</a>
+              <a href="https://shrtco.de/NtGuuJ">Blog</a>
             </li>
             <li>
-              <a href="#">Developers</a>
+              <a href="https://shrtco.de/NtGuuJ">Developers</a>
             </li>
             <li>
-              <a href="#">Support</a>
+              <a href="https://shrtco.de/NtGuuJ">Support</a>
             </li>
           </ul>
         </div>
@@ -40,16 +40,16 @@ export default function Footer() {
           <h3>Company</h3>
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="https://shrtco.de/NtGuuJ">About</a>
             </li>
             <li>
-              <a href="#">Our Team</a>
+              <a href="https://shrtco.de/NtGuuJ">Our Team</a>
             </li>
             <li>
-              <a href="#">Careers</a>
+              <a href="https://shrtco.de/NtGuuJ">Careers</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="https://shrtco.de/NtGuuJ">Contact</a>
             </li>
           </ul>
         </div>
@@ -57,7 +57,7 @@ export default function Footer() {
 
       <ul className={styles["social-links"]}>
         <li>
-          <a href="#" aria-label="social links">
+          <a href="https://shrtco.de/NtGuuJ" aria-label="social links">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
               <path
                 fill="currentColor"
@@ -67,7 +67,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="#" aria-label="social links">
+          <a href="https://shrtco.de/NtGuuJ" aria-label="social links">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
               <path
                 fill="currentColor"
@@ -77,7 +77,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="#" aria-label="social links">
+          <a href="https://shrtco.de/NtGuuJ" aria-label="social links">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
               <path
                 fill="currentColor"
@@ -87,7 +87,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="#" aria-label="social links">
+          <a href="https://shrtco.de/NtGuuJ" aria-label="social links">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
               <path
                 fill="currentColor"
