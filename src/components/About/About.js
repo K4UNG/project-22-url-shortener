@@ -51,7 +51,7 @@ export default function About(props) {
         </div>
       </section>
       <div className={styles.boost}>
-        <img src={`./images/bg-boost-${props.state}.svg`} alt="background image" />
+        <img src={`./images/bg-boost-${props.state}.svg`} alt="get started section background pattern" />
         <div>
           <h3>Boost your links today</h3>
           <button className={styles.boost__btn}>Get Started</button>
