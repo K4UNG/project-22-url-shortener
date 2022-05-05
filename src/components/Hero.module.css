@@ -28,7 +28,7 @@
 
 .hero__btn {
     font-size: 1.125rem;
-    padding: 1rem;
+    padding: .9rem;
     border: 0;
     background-color: var(--cyan);
     border-radius: 30px;
@@ -41,4 +41,53 @@
 
 .hero__btn:hover {
     opacity: .5;
+}
+
+@media (min-width: 620px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr .8fr;
+        grid-column-gap: 1rem;
+    }
+
+    .wrapper {
+        padding-left: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero__img {
+        order: 2;
+    }
+
+    .hero__text {
+        text-align: start;
+        max-width: 600px;
+        margin-left: 0;
+    }
+
+    .hero__text p {
+        margin: 0;
+    }
+
+    .hero__btn {
+        display: inline-block;
+        margin: 0;
+        width: 200px;
+    }
+
+    .hero__img {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .wrapper {
+        padding-left: 6rem;
+    }
+
+    .hero__text h1 {
+        font-size: 3.5rem;
+    }
 }

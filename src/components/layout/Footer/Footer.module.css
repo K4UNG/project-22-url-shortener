@@ -22,6 +22,7 @@ a {
     color: var(--gray);
     text-decoration: none;
     line-height: 1.7;
+    transition: 100ms ease;
 }
 
 .links>* {
@@ -29,7 +30,7 @@ a {
 }
 
 .links a:hover {
-    text-decoration: underline;
+    color: var(--cyan);
 }
 
 .social-links {
@@ -49,4 +50,27 @@ svg {
 
 .social-links a:hover svg {
     color: var(--cyan)
+}
+
+@media (min-width: 1100px) {
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3.5rem 5.5rem;
+    }
+
+    .links {
+        display: flex;
+        text-align: start;
+        gap: 2rem;
+        margin-left: 5rem;
+    }
+
+    .links>* {
+        margin: 0;
+    }
+
+    .social-links {
+        align-self: start;
+    }
 }

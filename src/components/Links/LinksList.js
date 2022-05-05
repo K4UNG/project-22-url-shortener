@@ -10,18 +10,20 @@ export default function LinksList(props) {
           <div key={link.id} className={styles.card}>
             <p className={styles.original}>{link.original}</p>
             <hr />
-            <p className={styles.short}>{link.short}</p>
-            <button
-              onClick={() => {
-                navigator.clipboard.writeText(link.short);
-                setCopied(link.id)
-              }}
-              className={`${styles.copy} ${
-                copied === link.id ? styles.copied : undefined
-              }`}
-            >
-              {copied === link.id ? 'Copied!' : 'Copy'}
-            </button>
+            <div>
+              <p className={styles.short}>{link.short}</p>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(link.short);
+                  setCopied(link.id);
+                }}
+                className={`${styles.copy} ${
+                  copied === link.id ? styles.copied : undefined
+                }`}
+              >
+                {copied === link.id ? "Copied!" : "Copy"}
+              </button>
+            </div>
           </div>
         );
       })}

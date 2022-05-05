@@ -13,6 +13,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.original {
     font-weight: bold;
 }
 
@@ -36,4 +39,30 @@
 .copy.copied {
     opacity: 1;
     background-color: var(--darker-violet);
+}
+
+@media (min-width: 900px) {
+    .card {
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+    }
+
+    .card>div {
+        display: flex;
+    }
+
+    .card hr {
+        display: none;
+    }
+
+    .short {
+        white-space: normal;
+        overflow: visible;
+    }
+
+    .copy {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
 }

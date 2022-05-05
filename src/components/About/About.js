@@ -1,6 +1,6 @@
 import styles from "./About.module.css";
 
-export default function About() {
+export default function About(props) {
   return (
     <>
       <section className={styles.about}>
@@ -51,7 +51,7 @@ export default function About() {
         </div>
       </section>
       <div className={styles.boost}>
-        <img src="./images/bg-boost-mobile.svg" alt="background image" />
+        <img src={`./images/bg-boost-${props.state}.svg`} alt="background image" />
         <div>
           <h3>Boost your links today</h3>
           <button className={styles.boost__btn}>Get Started</button>

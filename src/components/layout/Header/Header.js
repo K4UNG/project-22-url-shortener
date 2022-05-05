@@ -15,7 +15,9 @@ export default function Header() {
 
   return (
     <header>
-      <img className={styles.logo} src="./images/logo.svg" />
+      <div>
+        <img className={styles.logo} src="./images/logo.svg" />
+      </div>
       <Nav shown={shown} close={close} />
       <button
         aria-label="menu button"

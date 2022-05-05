@@ -59,3 +59,26 @@ header {
 .line3 {
     bottom: 5px;
 }
+
+@media (min-width: 620px) {
+    header {
+        padding: 1.5rem 2.5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .burger {
+        display: none;
+        position: absolute;
+    }
+
+    header {
+        gap: 2.5rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    header {
+        padding: 1.5rem 5.5rem;
+    }
+}

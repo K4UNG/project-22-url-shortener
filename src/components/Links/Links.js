@@ -3,10 +3,11 @@ import { useEffect, useState } from 'react'
 import styles from './Links.module.css'
 import LinksList from './LinksList'
 
-export default function Links() {
+export default function Links(props) {
     const [link, setLink] = useState('')
     const [formTouched, setFormTouched] = useState(false)
     const [error, setError] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
     const [links, setLinks] = useState([])
 
@@ -49,6 +50,7 @@ export default function Links() {
     }
 
     async function submitHandler(e) {
+        setIsLoading(true)
         e.preventDefault()
         if (!formTouched) {
             setFormTouched(true)
@@ -59,6 +61,7 @@ export default function Links() {
         const result = await response.json()
         if (!result.ok) {
             setError(true)
+            setIsLoading(false)
             return
         }
         addLS({
@@ -67,12 +70,15 @@ export default function Links() {
             short: result.result.full_short_link
         })
         setLinks(JSON.parse(getLS()))
+        setIsLoading(false)
+        setLink('')
+        setFormTouched(false)
     }
     return <section className={styles.links__wrapper}>
         <form className={styles.links} onSubmit={submitHandler}>
-            <img className={styles.bg} src='./images/bg-shorten-mobile.svg' alt='background image' />
-            <div className={`${styles.form__input} ${invalid ? styles.invalid : undefined}`} onBlur={inputBlurHandler} onChange={inputChangeHandler} value={link} >
-                <input type='text' placeholder="Shorten a link here..." />
+            <img className={styles.bg} src={`./images/bg-shorten-${props.state}.svg`} alt='background image' />
+            <div className={`${styles.form__input} ${invalid ? styles.invalid : undefined} ${isLoading ? styles.loading : ''}`} >
+                <input onBlur={inputBlurHandler} onChange={inputChangeHandler} value={link} type='text' placeholder="Shorten a link here..." />
             </div>
             <button className={styles.form__btn}>Shorten It!</button>
         </form>
