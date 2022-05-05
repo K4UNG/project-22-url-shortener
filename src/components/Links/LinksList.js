@@ -15,6 +15,7 @@ export default function LinksList(props) {
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(link.short);
+                  props.onCopy()
                   setCopied(link.id);
                 }}
                 className={`${styles.copy} ${

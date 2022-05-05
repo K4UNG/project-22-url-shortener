@@ -49,13 +49,13 @@ export default function Links(props) {
   }
 
   async function submitHandler(e) {
-    setIsLoading(true);
     e.preventDefault();
     if (!formTouched) {
       setFormTouched(true);
       return;
     }
     if (invalid) return;
+    setIsLoading(true);
     const response = await fetch(
       `https://api.shrtco.de/v2/shorten?url=${link}`
     );
@@ -98,7 +98,7 @@ export default function Links(props) {
         </div>
         <button className={styles.form__btn}>Shorten It!</button>
       </form>
-      <LinksList links={links} />
+      <LinksList links={links} onCopy={() => {setFormTouched(false)}} />
       {links.length !== 0 && <button className={styles.remove} onClick={removeLinks}>
         Remove All
       </button>}
