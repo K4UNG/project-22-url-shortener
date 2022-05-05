@@ -45,6 +45,7 @@ export default function Links(props) {
   function removeLinks() {
     localStorage.removeItem("links");
     setLinks([]);
+    setFormTouched(false)
   }
 
   async function submitHandler(e) {
@@ -98,9 +99,9 @@ export default function Links(props) {
         <button className={styles.form__btn}>Shorten It!</button>
       </form>
       <LinksList links={links} />
-      <button className={styles.remove} onClick={removeLinks}>
+      {links.length !== 0 && <button className={styles.remove} onClick={removeLinks}>
         Remove All
-      </button>
+      </button>}
     </section>
   );
 }

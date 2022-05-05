@@ -55,6 +55,11 @@
     left: 0;
 }
 
+.form__input.loading + button,
+.form__input.invalid + button {
+    margin-top: 1rem;
+}
+
 .form__input.loading::after {
     content: 'Loading...';
     font-style: italic;
@@ -122,4 +127,9 @@ button:hover {
         padding: 0;
         width: unset;
     }
+
+    .form__input.loading + button,
+    .form__input.invalid + button {
+        margin-top: 0;
+}
 }
