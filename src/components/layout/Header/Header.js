@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header>
       <div>
-        <img className={styles.logo} src="./images/logo.svg" />
+        <img className={styles.logo} src="./images/logo.svg" alt="logo" />
       </div>
       <Nav shown={shown} close={close} />
       <button

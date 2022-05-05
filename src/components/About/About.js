@@ -16,7 +16,7 @@ export default function About(props) {
           <div className={styles.about__line}></div>
           <div className={styles.about__card}>
             <div className={styles.about__icon}>
-              <img src="./images/icon-brand-recognition.svg" alt="icons" />
+              <img src="./images/icon-brand-recognition.svg" alt="about sections icon" />
             </div>
             <h3>Brand Recognition</h3>
             <p>
@@ -28,7 +28,7 @@ export default function About(props) {
 
           <div className={styles.about__card}>
             <div className={styles.about__icon}>
-              <img src="./images/icon-detailed-records.svg" alt="icons" />
+              <img src="./images/icon-detailed-records.svg" alt="about sections icon" />
             </div>
             <h3>Detailed Records</h3>
             <p>
@@ -40,7 +40,7 @@ export default function About(props) {
 
           <div className={styles.about__card}>
             <div className={styles.about__icon}>
-              <img src="./images/icon-fully-customizable.svg" alt="icons" />
+              <img src="./images/icon-fully-customizable.svg" alt="about sections icon" />
             </div>
             <h3>Fully Customizable</h3>
             <p>

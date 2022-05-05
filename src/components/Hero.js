@@ -6,6 +6,7 @@ export default function Hero() {
       <img
         className={styles["hero__img"]}
         src="./images/illustration-working.svg"
+        alt="hero image"
       />
 
       <div className={styles.wrapper}>
