@@ -7,7 +7,11 @@ import About from './About/About'
 export default function Main() {
     const [currentState, setCurrentState] = useState('desktop')
 
-    useState(() => {
+    useEffect(() => {
+        const width = window.innerWidth
+        if (width >= 620) setCurrentState('desktop')
+        else setCurrentState('mobile')
+        
         const resizeHandler = () => {
             if (window.innerWidth >= 620) {
                 setCurrentState('desktop')
